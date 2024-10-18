@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'valheim';
+    src: url('../dist/font/CaesarDressing-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "valheim";
+    background-color: #000000;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#method {
+    border: 1px solid #ffff;
+    left: 17%;
+    position: absolute;
+    bottom: 10%;
+    width: 65%;
+    height: 65%;
+    transition: all 1s;
+    visibility: hidden;
+    padding: 0.5em;
+    color: #fff;
+
+    &>#title {
+        font-size: 5em;
+    }
+
+    &>#method-list {
+        width: 50%;
+        height: 50%;
+        transition: all 0.5s;
+        padding-left: 3em;
+
+        &>ul {
+            &>li {
+                font-size: xx-large;
+            }
+        }
+    }
+}
+
+
+
+#logo-content {
+    width: 25%;
+    height: 25%;
+    display: flex;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+
+    & img {
+        position: relative;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    & img:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 #ff0000);
+    }
+}

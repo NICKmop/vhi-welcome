@@ -1,0 +1,32 @@
+{
+  "name": "vhi-welcome",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:prd": "cross-env NODE_ENV=prd node index.js",
+    "start:local": "cross-env NODE_ENV=local node index.js",
+    "build":"netlify deploy --prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "csv-parser": "^3.0.0",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "multer": "^1.4.4",
+    "netlify-cli": "^17.37.1",
+    "netlify-lambda": "^2.0.16",
+    "node-localstorage": "^3.0.5",
+    "nodeserver": "file:",
+    "pg": "^8.11.5",
+    "save": "^2.9.0",
+    "serverless-http": "^3.2.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
